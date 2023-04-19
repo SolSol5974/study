@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main()
+{	
+	char a[1000];
+	char b[1000];
+	char c[1000];
+
+	cout << "이름 입력:";
+	cin >> a;
+	cout << "암호 입력:";
+	cin >> b;
+	cout << "다시 입력:";
+	cin >> c;
+
+	if (strcmp(b, c) == 0)
+		cout << a << "님께서 로그인하셨습니다." << endl;
+	else
+		cout << a << "님, 다시입력하세요." << endl;
+
+
+
+}
