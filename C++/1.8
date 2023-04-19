@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int n = 0;
+	int sum = 0;
+	int sum_tri = 0;
+	for (int i = 1; i < 101; i++)
+	{
+		sum = sum + i;
+		if (i % 3 == 0)
+		{
+			sum_tri = sum_tri + i;
+		}
+	}
+	cout << "1~100 사이의 정수합은 " << sum << "이고" << endl;
+	cout << "3의 배수의 합은 " << sum_tri << "입니다." << endl;
+}
